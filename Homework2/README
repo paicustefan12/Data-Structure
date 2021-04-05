@@ -1,0 +1,13 @@
+In functia create am alocat memorie pentru matricea de adiacenta a grafului.
+In functia citire am citit din fisier routerele, pc-urile si am creat matricea de adiacenta a grafului. Am transformat ultima cifra sau ultimele doua cifre ale numelui routerului prin diferenta dintre cifra ca si caracter si caracaterul 0 sau 1.
+In functia ping am folosit algoritmul Roy-Warshall cu care am creat matricea de drumuri a grafului si am verificat pentru cele doua ip-uri daca exista drum intre cele doua routere. Am tinut cont si de starea celor doua echipamente.
+In functia sipn am cautat ip-ul citit in structura router si am pastrat intr-o variabila pozitia ip-ului citit. Apoi am afisat toate ip-urile cu care are legatura directa, folosind matricea de adiacenta a grafului.
+In functia si am cautat ip-ul citit in structura router si am pastrat intr-o variabila pozitia ip-ului citit. Apoi am afisat toate ip-urile pc-urilor conectate la router.
+In functia trace am folosit algoritmul Dijkstra. Am aflat distanta minima pentru fiecare nod din graf si cu un vector de parinti am afisat drumul de cost minim dintre cele doua ip-uri date. Vectorul de parinti l-am creat de la final spre inceput plecand de la nodul la care trebuia sa ajung si l-am afisat tot de la final spre inceput.
+In functia up am cautat ip-ul citit in structura router si am pastrat intr-o variabila pozitia ip-ului citit si am deschis pc-ul de la ip-ul dat.
+In functia up am cautat ip-ul citit in structura router si am pastrat intr-o variabila pozitia ip-ului citit si am deschis pc-ul de la ip-ul dat.
+In functia up am cautat ip-ul citit in structura router si am pastrat intr-o variabila pozitia ip-ului citit si am inchis pc-ul de la ip-ul dat.
+In functia lc am cautat cele doua ip-uri citite si am pastrat in doua variabile pozitiile ip-urilor date. Apoi in matricea de adiacenta am schimbat valoare ce corespunde celor doua ip-uri astfel sa nu mai aiba legatura cele doua routere.
+In functia add am cautat cele doua ip-uri citite si am pastrat in doua variabile pozitiile ip-urilor date. Apoi in matricea de adiacenta am schimbat valoare ce corespunde celor doua ip-uri astfel sa existe legature cele doua routere cu valoarea d.
+In functia citire2 am creat un meniu in care sunt apelate functiile programului rand pe rand.
+In main am creat graful si vectorul de routere, am apelat functiile citire si citire2 si am eliberat memoria alocata pentru matricea de adiacenta si pentru vectorul de routere.
